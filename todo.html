@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Welcome</title>
     </head>
     <body>
         <!-- 검색창 -->
@@ -11,6 +11,19 @@
         <form id="search-form">
             <input type="text" placeholder="search..." />
         </form>
+
+        <!-- 바로가기 -->
+        <div id="quick-site-container">
+            <span id="quick-site-container-title">바로가기</span>
+            <button id="quick-site-adder">+</button>
+            <form id="quick-site-add-form">
+                <span>URL</span>
+                <input id="quick-site-url" type="url" name="url" required />
+                <span>name</span>
+                <input id="quick-site-title" type="text" required />
+                <button type="submit">add</button>
+            </form>
+        </div>
 
         <h1>To-Do List</h1>
         <!-- 입력 양식 -->
@@ -24,5 +37,6 @@
         <!-- JS 파일들 -->
         <script src="todo.js"></script>
         <script src="search.js"></script>
+        <script src="quickSite.js"></script>
     </body>
 </html>
